@@ -10,3 +10,45 @@
 	display: inline-block
 	background-clip: text
 	color: transparent
+
+@mixin position-center
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+//Media quries setup - Dekstop first approach
+
+//0 - 600px					Phone
+//600px - 900px			Tablet portrait
+//900px - 1200px		Tablet landscape
+//1200xp - 1800px		Desktop - and where the normal style applies
+//1800 +						Larger desktops
+
+@mixin respond-phone
+	@media (max-width: 600px)
+		@content
+
+//Breakpoint aguement choices:
+
+//-phone
+//-tab-port
+//-tab-land
+//-big-dekstop
+
+@mixin respond ($breakpoint)
+	@if $breakpoint == phone
+		@media (max-width: 37.5em)
+			@content
+
+	@if $breakpoint == tab-port
+		@media (max-width: 56.25em)
+			@content
+
+	@if $breakpoint == tab-land
+		@media (max-width: 75em)
+			@content
+
+	@if $breakpoint == big-desktop
+		@media (min-width: 112.5em)
+			@content

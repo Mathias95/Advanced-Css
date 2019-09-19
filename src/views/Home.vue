@@ -1,6 +1,25 @@
 <template>
   <div class="home">
 
+		<div class="navigation">
+			<input type="checkbox" class="navigation__check-box" id="navi-toggle">
+			<label for="navi-toggle" class="navigation__button">
+				<span class="navigation__icon">&nbsp;</span>
+			</label>
+
+			<div class="navigation__background">&nbsp;</div>
+			
+			<nav class="navigation__nav">
+				<ul class="navigation__list">
+					<li class="navigation__item"><a href="#" class="navigation__link"><span class="navigation__number">01</span>About Natours</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link"><span class="navigation__number">02</span>Your benifits</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link"><span class="navigation__number">03</span>Popular tours</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link"><span class="navigation__number">04</span>Stories</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link"><span class="navigation__number">05</span>Book now</a></li>
+				</ul>
+			</nav>
+		</div>
+
     <header class="header">
       <div class="header__logo-box">
         <router-link to="/">
@@ -76,7 +95,7 @@
 				</div>
 			</section>
 
-			<section class="section-tours">
+			<section class="section-tours" id="section-tours">
 				<div class="u-center-text u-margin-bottom-big">
 					<h2 class="heading-secondary">
 						Most popular tours
@@ -104,7 +123,7 @@
 										<p class="card__price-only">Only</p>
 										<p class="card__price-value">$297</p>
 									</div>
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -130,7 +149,7 @@
 										<p class="card__price-only">Only</p>
 										<p class="card__price-value">$497</p>
 									</div>
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -156,7 +175,7 @@
 										<p class="card__price-only">Only</p>
 										<p class="card__price-value">$897</p>
 									</div>
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -276,6 +295,26 @@
 				</div>
 			</div>
 		</footer>
+
+		<!--Popup element on click-->
+		<div class="popup" id="popup">
+			<div class="popup__content">
+				<div class="popup__left">
+					<img src="../assets/img/nat-8.jpg" class="popup__img" alt="Tour photo">
+					<img src="../assets/img/nat-9.jpg" class="popup__img" alt="Tour photo">
+				</div>
+				<div class="popup__right">
+					<a href="#section-tours" class="popup__close">&times;</a>
+					<h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+					<h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please reads these terms before booking</h3>
+					<p class="popup__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum posuere urna nec. Tellus molestie nunc non blandit massa enim nec dui nunc. In hac habitasse platea dictumst quisque. Sem nulla pharetra diam sit amet nisl suscipit. Mi in nulla posuere sollicitudin aliquam. Adipiscing commodo elit at imperdiet dui accumsan. Eget mi proin sed libero enim sed faucibus turpis. Quis auctor elit sed vulputate mi sit. Vel elit scelerisque mauris pellentesque pulvinar. Amet mauris commodo quis imperdiet. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Ultrices in iaculis nunc sed augue lacus viverra vitae. Arcu dictum varius duis at consectetur lorem donec massa. Pretium quam vulputate dignissim suspendisse in est ante in. Ut porttitor leo a diam sollicitudin. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Egestas erat imperdiet sed euismod.
+					</p>
+					<a href="#" class="btn btn--green">Book now</a>
+				</div>
+			</div>
+		</div>
+
   </div>
 </template>
 
