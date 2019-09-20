@@ -7,13 +7,20 @@
 	box-shadow: $boxshadow-small
 	transition: all .2s
 
+	@include respond(tab-port)
+		padding: 2rem
+
+	@include respond(tab-port)
+		padding: 4rem
+
+
 	&:hover
 		transform: translateY(-1.5rem) scale(1.03)
-
 
 	&__icon
 		font-size: 6rem
 		margin-bottom: .5rem
 		@include gradient-text-effect
 
-	&__text
+		@include respond(tab-port)
+			margin-bottom: 0rem

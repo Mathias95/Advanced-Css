@@ -9,6 +9,17 @@
 	font-size: $default-font-size
 	transform: skewX(-12deg)
 
+	@include respond(tab-port)
+		width: 100%
+		padding: 4rem
+		padding-left: 7rem
+
+	@include respond(phone)
+		transform: skewY(0)
+		padding: 4rem
+		border-radius: .3rem	
+		text-align: center
+
 	&:hover &__caption
 		opacity: 1
 		transform: translate(-50%, -50%)
@@ -26,6 +37,12 @@
 		clip-path: circle(50% at 50% 50%)
 		transform: translateX(-3rem) skewX(12deg)
 
+		@include respond(phone)
+			transform: translateX(0rem) skewX(0deg)	
+			float: none
+			margin: 0 auto
+			margin-bottom: 3rem
+
 	&__img
 		transform: scale(1.4)
 		width: 100%
@@ -35,6 +52,9 @@
 
 	&__text
 		transform: skewX(12deg)
+		
+		@include respond(phone)
+			transform: skewX(0deg)
 
 	&__caption
 		@include position-center

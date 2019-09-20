@@ -274,7 +274,11 @@
 
 		<footer class="footer">
 			<div class="footer__logo-box">
-				<img src="../assets/img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+				<picture class="footer__logo">
+					<source srcset="../assets/img/logo-green-small-1x.png 1x, ../assets/img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+					<img srcset="../assets/img/logo-green-1x.png 1x, ../assets/img/logo-green-2x.png 2x" alt="Full logo">
+				</picture>
 			</div>
 			<div class="row">
 				<div class="col-1-of-2">
