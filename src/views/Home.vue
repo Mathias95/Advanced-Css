@@ -54,9 +54,27 @@
 					</div>
 					<div class="col-1-of-2">
 						<div class="composition">
-							<img src="../assets/img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-							<img src="../assets/img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-							<img src="../assets/img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+							<img srcset="../assets/img/nat-1.jpg 300w, ../assets/img/nat-1-large.jpg 1000w"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Photo 1"
+								class="composition__photo composition__photo--p1"
+								src="../assets/img/nat-1-large.jpg">
+
+								<img srcset="../assets/img/nat-2.jpg 300w, ../assets/img/nat-2-large.jpg 1000w"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Photo 2"
+								class="composition__photo composition__photo--p2"
+								src="../assets/img/nat-2-large.jpg">
+								
+								<img srcset="../assets/img/nat-3.jpg 300w, ../assets/img/nat-3-large.jpg 1000w"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Photo 3"
+								class="composition__photo composition__photo--p3"
+								src="../assets/img/nat-3-large.jpg">
+
+							<!--<img src="../assets/img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+									<img src="../assets/img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+									<img src="../assets/img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">-->
 						</div>
 					</div>
 				</div>
@@ -262,7 +280,7 @@
 										</label>
 									</div>
 								</div>
-								<div class="form__group">
+								<div class="form__group form__group--button">
 									<button class="btn btn--green" type="submit">Next step &rarr;</button>
 								</div>
 							</form>
@@ -277,7 +295,7 @@
 
 				<picture class="footer__logo">
 					<source srcset="../assets/img/logo-green-small-1x.png 1x, ../assets/img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
-					<img srcset="../assets/img/logo-green-1x.png 1x, ../assets/img/logo-green-2x.png 2x" alt="Full logo">
+					<img srcset="../assets/img/logo-green-1x.png 1x, ../assets/img/logo-green-2x.png 2x" src="../assets/img/logo-green-small-2x.png" alt="Full logo">
 				</picture>
 			</div>
 			<div class="row">
