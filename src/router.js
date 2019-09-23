@@ -1,12 +1,14 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import router from 'vue-router'
 import Home from './views/Home.vue'
-import Codepen from './views/Codepen.vue'
+import Natours from './views/Natours.vue'
+import Trillo from './views/Trillo.vue'
 import Grid from './views/Grid.vue'
 
-Vue.use(Router)
+Vue.use(router)
 
-export default new Router({
+export default new router({
+	mode: 'history',
   routes: [
     {
       path: '/',
@@ -14,9 +16,16 @@ export default new Router({
       component: Home
 		},
 		{
-			path: '/codepen',
-			name: 'codepen',
-			component: Codepen
+      path: '/natours',
+			name: 'natours',
+			meta: { bodyClass: 'natours-page'},
+			component: Natours,
+		},
+		{
+			path: '/trillo',
+			name: 'trillo',
+			meta: { bodyClass: 'trillo-page'},
+			component: Trillo
 		},
 		{
 			path: '/grid',

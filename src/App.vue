@@ -5,7 +5,20 @@
 </template>
 
 <style lang="sass">
-@import "./assets/sass/main.sass"
-@import "./assets/icon-font.css"
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900')
+*
+	margin: 0
+	padding: 0
+	
+*,
+*::before,
+*::after
+	box-sizing: inherit
+
+html
+	box-sizing: border-box
+
+body
+	font-size: 16px
+	line-height: 1.7
+	
 </style>
