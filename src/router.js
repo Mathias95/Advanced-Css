@@ -3,6 +3,7 @@ import router from 'vue-router'
 import Home from './views/Home.vue'
 import Natours from './views/Natours.vue'
 import Trillo from './views/Trillo.vue'
+import Nexter from './views/Nexter.vue'
 import Grid from './views/Grid.vue'
 
 Vue.use(router)
@@ -26,6 +27,12 @@ export default new router({
 			name: 'trillo',
 			meta: { bodyClass: 'trillo-page'},
 			component: Trillo
+		},
+		{
+			path: '/nexter',
+			name: 'nexter',
+			meta: { bodyClass: 'nexter-page'},
+			component: Nexter
 		},
 		{
 			path: '/grid',
