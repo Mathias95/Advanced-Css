@@ -22,7 +22,7 @@
 
     <header class="header">
       <div class="header__logo-box">
-        <router-link to="/Home">
+        <router-link to="/">
           <img src="../assets/img/logo-white.png" alt="Logo" class="header__logo" />
         </router-link>
       </div>
@@ -50,7 +50,7 @@
 						<h3 class="heading-tertiary u-margin-bottom-small">Live adventues like you never have before</h3>
 						<p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore temporibus nihil harum voluptatibus ducimus deleniti doloremque itaque repellendus.</p>
 
-						<router-link to="#" class="btn-text">Learn more &rarr;</router-link>
+						<router-link to="/" class="btn-text">Learn more &rarr;</router-link>
 					</div>
 					<div class="col-1-of-2">
 						<div class="composition">
@@ -200,7 +200,7 @@
 					</div>
 				</div>
 				<div class="u-center-text u-margin-top-huge">
-					<router-link to="#" class="btn btn--green">Discover all tours</router-link>
+					<router-link to="/" class="btn btn--green">Discover all tours</router-link>
 				</div>
 			</section>
 
@@ -242,7 +242,7 @@
 					</div>
 				</div>
 				<div class="u-center-text u-margin-top-huge">
-					<router-link to="#" class="btn-text">Read all stories &rarr;</router-link>
+					<router-link to="/" class="btn-text">Read all stories &rarr;</router-link>
 				</div>
 			</section>
 
@@ -302,17 +302,17 @@
 				<div class="col-1-of-2">
 					<div class="footer__navigation">
 						<ul class="footer__list">
-							<li class="footer__item"><router-link to="#" class="footer__link">Company</router-link></li>
-							<li class="footer__item"><router-link to="#" class="footer__link">Contact us</router-link></li>
-							<li class="footer__item"><router-link to="#" class="footer__link">Carrers</router-link></li>
-							<li class="footer__item"><router-link to="#" class="footer__link">Privacy</router-link></li>
-							<li class="footer__item"><router-link to="#" class="footer__link">Terms</router-link></li>
+							<li class="footer__item"><router-link to="/" class="footer__link">Company</router-link></li>
+							<li class="footer__item"><router-link to="/" class="footer__link">Contact us</router-link></li>
+							<li class="footer__item"><router-link to="/" class="footer__link">Carrers</router-link></li>
+							<li class="footer__item"><router-link to="/" class="footer__link">Privacy</router-link></li>
+							<li class="footer__item"><router-link to="/" class="footer__link">Terms</router-link></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-1-of-2">
 					<p class="footer__copyright">
-						Build my <router-link to="#" class="footer__link">Theme template</router-link> for a online course <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Mathias Jacobsen. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original autho, Jonas Schmedtmann, is of course highly appreciated.
+						Build my <router-link to="/" class="footer__link">Theme template</router-link> for a online course <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Mathias Jacobsen. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original autho, Jonas Schmedtmann, is of course highly appreciated.
 					</p>
 				</div>
 			</div>
