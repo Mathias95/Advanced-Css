@@ -1,0 +1,10 @@
+.nexter-page
+	font-family: $primary-font
+	color: $grey-dark-2-color
+	font-weight: 300
+	line-height: 1.6
+
+.ncontainer
+	display: grid
+	grid-template-rows: 80vh min-content 40vw repeat(3, min-content)
+	grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(5%, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(5%, 1fr) [full-end]

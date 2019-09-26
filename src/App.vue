@@ -16,7 +16,7 @@
 
 html
 	box-sizing: border-box
-	font-size: 62.5%
+	font-size: 62.5% //10px/16px = 62.5% --> 1rem = 10px
 
 body
 	font-size: 16px
