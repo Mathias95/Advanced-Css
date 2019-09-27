@@ -1,3 +1,62 @@
 .nheader
 	background-color: $grey-dark-1-color
 	grid-column: full-start / col-end 6
+	background-image: linear-gradient(rgba($secondary-color, 0.93), rgba($secondary-color, 0.93)), url(../assets/img/hero.jpeg)
+	background-size: cover
+	background-position: center
+
+	display: grid
+	grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr
+	grid-row-gap: 1.5rem
+	grid-template-columns: minmax(min-content, max-content)
+	padding: 8rem
+	padding-top: 4rem
+	justify-content: center
+
+	@media only screen and (max-width: $lg-bp)
+		padding: 8rem 5%
+
+	@media only screen and (max-width: $md-bp)
+		grid-column: 1 / -1
+
+	@media only screen and (max-width: $sm-bp)
+		padding: 5rem 5%
+
+	&__logo
+		height: 3rem
+		justify-self: center
+
+	&__title
+		@media only screen and (max-width: $lg-bp)
+			margin-bottom: 4rem
+
+	&__button
+		align-self: start
+		justify-self: start
+
+	&__seenon-text
+		font-size: 1.6rem
+		color: $grey-light-2-color
+		display: grid
+		grid-template-columns: 1fr max-content 1fr
+		grid-column-gap: 1.5rem
+		align-items: center
+
+		&::before,
+		&::after
+			content: ""
+			height: .1rem
+			display: block
+			background-color: currentColor
+
+	&__seenon-logos
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		grid-column-gap: 3rem
+		justify-items: center 
+		align-items: center
+
+		img
+			max-height: 2.5rem
+			max-width: 100% 
+			filter: brightness(70%)

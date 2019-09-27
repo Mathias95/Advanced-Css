@@ -1,3 +1,36 @@
 .nfooter
 	background-color: $secondary-color
 	grid-column: full-start / full-end
+	padding: 8rem
+
+.nnav
+	list-style: none
+	display: grid
+	grid-gap: 2rem
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
+	align-items: center
+
+	&__link:link,
+	&__link:visited
+		font-size: 1.4rem
+		color: $white-color
+		text-decoration: none
+		font-family: $display-font
+		text-transform: uppercase
+		text-align: center
+		padding: 1.5rem
+		display: block
+		transition: all .2
+
+		&:hover,
+		&:active
+			background-color: rgba($white-color, .05)
+			transform: translateY(-.3rem)
+
+.ncopy
+	font-size: 1.4rem
+	color: $grey-light-2-color
+	text-align: center
+	width: 70%
+	margin: 0 auto
+	margin-top: 6rem
